@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vector — экосистема AI-агентов · Osmosy</title>
+<meta name="description" content="Экосистема Vector: прикладные AI-департаменты и инфраструктура на базе Hermes Agent. Legal, Marketing, Work, Meat, Voice, Gene, Home и другое.">
+<style>
+  :root {
+    --bg: #0f1420;
+    --card: #1a2233;
+    --border: #2a3650;
+    --text: #e2e8f0;
+    --muted: #8b99b5;
+    --accent: #4f8ff7;
+    --accent-2: #6ea8ff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(79, 143, 247, 0.12), transparent),
+      var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 48px 24px;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 48px; }
+  .logo { width: 96px; height: auto; margin-bottom: 16px; border-radius: 16px; }
+  h1 { font-size: 32px; margin-bottom: 10px; }
+  .tagline { color: var(--muted); font-size: 16px; line-height: 1.6; max-width: 640px; margin: 0 auto; }
+  .tagline b { color: var(--text); font-weight: 600; }
+
+  .section { margin-bottom: 40px; }
+  .section-title {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted); margin-bottom: 16px; text-align: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  .proj {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .proj:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .proj-name { font-size: 16px; font-weight: 600; color: var(--accent-2); margin-bottom: 6px; }
+  .proj-desc { font-size: 13px; line-height: 1.5; color: var(--muted); }
+  .proj.live { border-color: rgba(79, 143, 247, 0.5); }
+  .live-badge {
+    display: inline-block; font-size: 11px; color: var(--accent);
+    border: 1px solid var(--accent); border-radius: 999px;
+    padding: 2px 8px; margin-left: 8px; vertical-align: 2px;
+  }
+  footer {
+    text-align: center; margin-top: 56px; color: var(--muted); font-size: 13px;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="assets/vector-logo.png" alt="Vector">
+    <h1>Vector</h1>
+    <p class="tagline">Экосистема <b>AI-агентов на базе Hermes Agent</b> (Nous Research):
+    прикладные департаменты — от юридического до заводского цеха — и
+    инфраструктура их развёртывания. Всё локально, данные не покидают периметр.</p>
+  </header>
+
+  <section class="section">
+    <div class="section-title">Прикладные департаменты</div>
+    <div class="grid">
+      <a class="proj" href="https://github.com/Osmosy/vector-legal">
+        <div class="proj-name">Vector Legal</div>
+        <div class="proj-desc">Юридический AI-департамент: 12 плагинов, 167 навыков, полный перенос Claude-for-Legal под право РФ. ГК, 152-ФЗ, ТК, АПК, Роспатент.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-marketing">
+        <div class="proj-name">Vector Marketing</div>
+        <div class="proj-desc">Маркетинговое AI-агентство: 16 профильных агентов под управлением CMO-оркестратора. Кампании, аналитика, контент, прогнозы.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-work">
+        <div class="proj-name">Vector Work</div>
+        <div class="proj-desc">Виртуальные сотрудники: 17 доменов Cowork (Anthropic), 212 навыков — legal, finance, HR, engineering, design, data.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-meat">
+        <div class="proj-name">Vector Meat</div>
+        <div class="proj-desc">Мясоперерабатывающий завод: 13 виртуальных работников, ХАССП, Меркурий/Честный ЗНАК, 5 стадий ИИ-трансформации.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-health">
+        <div class="proj-name">Vector Health</div>
+        <div class="proj-desc">Единая медицинская библиотека навыков: 1508 скиллов из 4 открытых источников + DICOM-анализ.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-gene">
+        <div class="proj-name">Vector Gene</div>
+        <div class="proj-desc">Персональная геномика с AI-агентами: FASTQ → варианты → ClinVar/gnomAD → AlphaMissense. Всё локально.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-office">
+        <div class="proj-name">Vector Office</div>
+        <div class="proj-desc">Офисный инструментарий виртуальных работников: Word, Excel, PowerPoint без офисного пакета (OfficeCLI).</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-1c">
+        <div class="proj-name">Vector 1C</div>
+        <div class="proj-desc">Навыки и инструменты для 1С:Enterprise — конфигурации, расширения, внешние обработки, отчёты.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-home">
+        <div class="proj-name">Vector Home</div>
+        <div class="proj-desc">Офлайн умный дом: голос/текст → GPT-2 парсер → Home Assistant. Без облака и GPU, RU+EN.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-voice">
+        <div class="proj-name">Vector Voice</div>
+        <div class="proj-desc">Голосовой слой: STT, TTS, intent recognition, диаризация. On-device, без облака (Moonshine Voice).</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Инфраструктура</div>
+    <div class="grid">
+      <a class="proj live" href="https://github.com/Osmosy/vector-pilot">
+        <div class="proj-name">Vector Pilot <span class="live-badge">live demo</span></div>
+        <div class="proj-desc">Пилот внедрения AI в организации: многопользовательский Hermes-стенд, Keycloak/LDAP SSO, 52 изолированных арендатора, локальная модель.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-grace">
+        <div class="proj-name">Vector Grace</div>
+        <div class="proj-desc">GRACE-методология: knowledge graph, grep-first навигация, semantic markup, frontier→слабая LLM пайплайн.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-skillopt">
+        <div class="proj-name">Vector SkillOpt</div>
+        <div class="proj-desc">Автоматический оптимизатор навыков: train the procedure, not the weights (на базе Microsoft SkillOpt).</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/vector-deck-themes">
+        <div class="proj-name">Vector Deck Themes</div>
+        <div class="proj-desc">15 дизайн-тем презентаций + универсальный движок дек. python-pptx, кириллица, dark/light.</div>
+      </a>
+      <a class="proj" href="https://github.com/Osmosy/archify">
+        <div class="proj-name">Archify (fork)</div>
+        <div class="proj-desc">Диаграммы для агентов: validated architecture/workflow/sequence/dataflow/lifecycle как интерактивный HTML.</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://github.com/Osmosy">github.com/Osmosy</a> · на базе <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a>
+  </footer>
+</div>
+</body>
+</html>
